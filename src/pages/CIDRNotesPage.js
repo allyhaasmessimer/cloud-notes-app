@@ -1,16 +1,10 @@
 // src/pages/CIDRNotesPage.js
 import React from "react";
-import CIDRImage from "../images/CIDRImage.jpg"; // Import the image
-import "../App.css";
 
 const CIDRNotesPage = () => {
     return (
         <div>
             <h2>CIDR Range Notes</h2>
-            <div className="image-container">
-                <img src={CIDRImage} alt="CIDR" className="cidr-image" />{" "}
-                {/* Include the image */}
-            </div>
             <p>
                 CIDR (Classless Inter-Domain Routing) is a method for allocating
                 IP addresses and routing Internet Protocol packets. It allows

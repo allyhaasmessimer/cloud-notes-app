@@ -1,20 +1,11 @@
 // src/pages/PrivateSubnetNotesPage.js
 import React from "react";
-import PrivateSubnetImage from "../images/PrivateSubnetImage.jpg"; // Import the image
-import "../App.css";
 
 const PrivateSubnetNotesPage = () => {
     return (
         <div>
             <h2>Private Subnet Notes</h2>
-            <div className="image-container">
-                <img
-                    src={PrivateSubnetImage}
-                    alt="private subnet"
-                    className="private-subnet-image"
-                />{" "}
-                {/* Include the image */}
-            </div>
+
             <p>
                 A Private Subnet is a subnet within a VPC (Virtual Private
                 Cloud) that has a route table configured to not allow internet

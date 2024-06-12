@@ -1,20 +1,10 @@
 // src/pages/AvailabilityZoneNotesPage.js
 import React from "react";
-import AvailabilityZoneImage from "../images/AvailabilityZoneImage.jpg"; // Import the image
-import "../App.css";
 
 const AvailabilityZoneNotesPage = () => {
     return (
         <div>
             <h2>Availability Zone Notes</h2>
-            <div className="image-container">
-                <img
-                    src={AvailabilityZoneImage}
-                    alt="Availability Zone"
-                    className="availability-zone-image"
-                />{" "}
-                {/* Include the image */}
-            </div>
             <p>
                 Availability Zones (AZs) are distinct locations within a region,
                 each comprising one or more data centers equipped with

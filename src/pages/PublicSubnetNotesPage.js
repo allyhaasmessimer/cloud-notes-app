@@ -1,20 +1,11 @@
 // src/pages/PublicSubnetNotesPage.js
 import React from "react";
-import PublicSubnetImage from "../images/PublicSubnetImage.jpg"; // Import the image
-import "../App.css";
 
 const PublicSubnetNotesPage = () => {
     return (
         <div>
             <h2>Public Subnet Notes</h2>
-            <div className="image-container">
-                <img
-                    src={PublicSubnetImage}
-                    alt="subnet"
-                    className="public-subnet-image"
-                />{" "}
-                {/* Include the image */}
-            </div>
+
             <p>
                 A Public Subnet is a subnet within a VPC (Virtual Private Cloud)
                 that has a route table entry pointing to an Internet Gateway,

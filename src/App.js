@@ -11,6 +11,8 @@ import CIDRNotesPage from "./pages/CIDRNotesPage";
 import RouteTableNotesPage from "./pages/RouteTableNotesPage";
 import PublicSubnetNotesPage from "./pages/PublicSubnetNotesPage";
 import PrivateSubnetNotesPage from "./pages/PrivateSubnetNotesPage";
+import InternetGatewayNotesPage from "./pages/InternetGatewayPage";
+import SecurityGroupsNotesPage from "./pages/SecurityGroupsPage";
 
 const App = () => {
     return (
@@ -39,6 +41,14 @@ const App = () => {
                     <Route
                         path="/private-subnet-notes"
                         element={<PrivateSubnetNotesPage />}
+                    />
+                    <Route
+                        path="/internet-gateway-notes"
+                        element={<InternetGatewayNotesPage />}
+                    />
+                    <Route
+                        path="/security-groups-notes"
+                        element={<SecurityGroupsNotesPage />}
                     />
 
                     {/* Add routes for other pages */}

@@ -4,9 +4,11 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 200px;
+    gap: 20px; /* Optional: Add some space between grid items */
 }
 
 .grid-item {
+    position: relative;
     padding: 20px;
     background-color: #f0f0f0;
     text-align: center;
@@ -15,29 +17,35 @@
     border-radius: 8px; /* Add border radius for rounded corners */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
     transition: background-color 0.3s ease; /* Smooth transition on hover */
+    overflow: hidden; /* Ensure image does not overflow */
 }
 
 .grid-item:hover {
     background-color: #ddd;
 }
 
-/* Adjust image sizes */
-.image-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px; /* Add some space below the image */
+.grid-item-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
-.vpc-image,
-.cidr-image,
-.availability-zone-image {
-    width: auto; /* Set the maximum width */
-    max-height: 200px; /* Limit the maximum height */
+.grid-item-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
-.route-table-image,
-.public-subnet-image,
-.private-subnet-image {
-    width: auto; /* Set the maximum width */
-    max-height: 300px; /* Limit the maximum height */
+.grid-item-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 1.2em;
 }
