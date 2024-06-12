@@ -1,10 +1,16 @@
 // src/pages/VPCNotesPage.js
 import React from "react";
+import vpcImage from "../images/VPCImage.jpg"; // Import the image
+import "../App.css";
 
 const VPCNotesPage = () => {
     return (
         <div>
             <h2>VPC (Virtual Private Cloud) Notes</h2>
+            <div className="image-container">
+                <img src={vpcImage} alt="VPC" className="vpc-image" />{" "}
+                {/* Include the image */}
+            </div>
             <p>
                 A VPC is a customizable virtual network within a public cloud,
                 such as AWS (Amazon Web Services), that provides users with

@@ -1,14 +1,9 @@
 /* src/App.css */
 
-.grid-container {
+.wrapper {
     display: grid;
-    grid-template-columns: repeat(
-        auto-fit,
-        minmax(200px, 1fr)
-    ); /* Responsive grid with min 200px width */
-    gap: 20px; /* Gap between grid items */
-    justify-items: center; /* Center grid items horizontally */
-    padding: 20px; /* Add padding around the grid */
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px;
 }
 
 .grid-item {
@@ -24,4 +19,25 @@
 
 .grid-item:hover {
     background-color: #ddd;
+}
+
+/* Adjust image sizes */
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* Add some space below the image */
+}
+
+.vpc-image,
+.cidr-image,
+.availability-zone-image {
+    width: auto; /* Set the maximum width */
+    max-height: 200px; /* Limit the maximum height */
+}
+
+.route-table-image,
+.public-subnet-image,
+.private-subnet-image {
+    width: auto; /* Set the maximum width */
+    max-height: 300px; /* Limit the maximum height */
 }

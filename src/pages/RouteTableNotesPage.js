@@ -1,10 +1,20 @@
 // src/pages/RouteTableNotesPage.js
 import React from "react";
+import RouteTableImage from "../images/RouteTable.jpg";
+import "../App.css";
 
 const RouteTableNotesPage = () => {
     return (
         <div>
             <h2>Route Table Notes</h2>
+            <div className="image-container">
+                <img
+                    src={RouteTableImage}
+                    alt="Route Table"
+                    className="route-table-image"
+                />{" "}
+                {/* Include the image */}
+            </div>
             <p>
                 A Route Table is a set of rules, called routes, that determine
                 where network traffic is directed within the VPC (Virtual
